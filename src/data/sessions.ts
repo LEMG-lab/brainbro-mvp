@@ -194,5 +194,627 @@ export const sessions: SessionData[] = [
             { word: "Mindfulness", meaning_es: "Atención plena", example_en: "Practice mindfulness." }
         ],
         coachTip: "'Anxious' se pronuncia Ank-shus, no digas anx-i-ous con todas las letras."
+    },
+    {
+        id: 'math1',
+        areaId: 'math',
+        topic: 'Algebra Básica',
+        difficulty: 1,
+        text: "Vamos a resolver una ecuación lineal sencilla paso a paso. Recuerda despejar la X moviendo los términos al otro lado con la operación contraria.",
+        questions: [
+            {
+                id: "mq1",
+                type: "math_steps",
+                prompt_en: "Solve for x",
+                prompt_es: "Resuelve para x",
+                problem: "3x + 5 = 14",
+                expectedAnswer: "3",
+                stepHints_es: ["Primero, resta 5 a ambos lados", "Luego, divide entre 3"],
+                tags: ["algebra"],
+                why_it_matters_es: "El álgebra permite encontrar valores desconocidos usando pistas.",
+                real_world_application_es: "Calcular cuánto dinero falta para comprar algo si ya tienes una parte ahorrada.",
+                future_value_es: "Base esencial para programación, física y finanzas avanzadas.",
+                mental_skill_built_es: "Pensamiento abstracto y resolución de incognitas secuencial.",
+                tier: 1,
+                domain: "school"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "En álgebra, lo que haces de un lado de la igualdad, debes hacerlo del otro."
+    },
+    {
+        id: 'math2',
+        areaId: 'math',
+        topic: 'Fracciones',
+        difficulty: 2,
+        text: "Simplificar fracciones significa dividirlas hasta que no se puedan hacer más pequeñas.",
+        questions: [
+            {
+                id: "mq2",
+                type: "math_steps",
+                prompt_en: "Simplify the fraction",
+                prompt_es: "Simplifica la fracción",
+                problem: "12 / 18",
+                expectedAnswer: "2/3",
+                stepHints_es: ["Encuentra un divisor común para 12 y 18", "Prueba dividiendo entre 6"],
+                tags: ["fractions"],
+                why_it_matters_es: "Las proporciones se usan en cocina, construcción y descuentos.",
+                real_world_application_es: "Ajustar una receta de comida para menos personas o entender un descuento del 66%.",
+                future_value_es: "Imprescindible para probabilidad y estadística de datos corporativos.",
+                mental_skill_built_es: "Identificar relaciones de escala profunda.",
+                tier: 1,
+                domain: "life"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Siempre busca el máximo común divisor para simplificar más rápido."
+    },
+    {
+        id: 'math3',
+        areaId: 'math',
+        topic: 'Problemas de Palabras',
+        difficulty: 1,
+        text: "A veces las matemáticas vienen escondidas en texto. Lee atentamente.",
+        questions: [
+            {
+                id: "mq3",
+                type: "math_steps",
+                prompt_en: "Word problem",
+                prompt_es: "Problema escrito",
+                problem: "Si 3 boletos cuestan 150, ¿cuánto cuesta 1 boleto?",
+                expectedAnswer: "50",
+                stepHints_es: ["Divide el costo total entre la cantidad de boletos"],
+                tags: ["word_problem"],
+                why_it_matters_es: "Evita que te estafen al comprar en volumen.",
+                real_world_application_es: "Saber exactamente si el paquete 'familiar' es realmente más barato que el individual.",
+                future_value_es: "Análisis de precios unitarios y rentabilidad en negocios.",
+                mental_skill_built_es: "Lógica de distribución equitativa.",
+                tier: 1,
+                domain: "money"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Una regla de tres simple te ayuda a resolver la mayoría de estos problemas."
+    }
+,
+    {
+        id: 'math_t1_01',
+        areaId: 'math',
+        topic: 'Suscripción de juegos',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_1",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 1: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "school"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_02',
+        areaId: 'math',
+        topic: 'Ahorros mensuales',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_2",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 2: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "games"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_03',
+        areaId: 'math',
+        topic: 'Snacks compartidos',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_3",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 3: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "life"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_04',
+        areaId: 'math',
+        topic: 'Tiempo de pantalla',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_4",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 4: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "coding"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_05',
+        areaId: 'math',
+        topic: 'Calculando daño',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_5",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 5: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "money"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_06',
+        areaId: 'math',
+        topic: 'Monedas de juego',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_6",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 6: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "school"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_07',
+        areaId: 'math',
+        topic: 'Descuento tienda',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_7",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 7: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "games"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_08',
+        areaId: 'math',
+        topic: 'Coleccionables',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_8",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 8: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "life"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_09',
+        areaId: 'math',
+        topic: 'Puntos exp.',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_9",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 9: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "coding"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_10',
+        areaId: 'math',
+        topic: 'Ingresos extra',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_10",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 10: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "money"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_11',
+        areaId: 'math',
+        topic: 'Precio unitario',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_11",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 11: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "school"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_12',
+        areaId: 'math',
+        topic: 'Repartición eq.',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_12",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 12: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "games"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_13',
+        areaId: 'math',
+        topic: 'Velocidad de red',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_13",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 13: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "life"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_14',
+        areaId: 'math',
+        topic: 'Almacenamiento',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_14",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 14: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "coding"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_15',
+        areaId: 'math',
+        topic: 'Distancia mapa',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_15",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 15: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "money"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_16',
+        areaId: 'math',
+        topic: 'Combustible nave',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_16",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 16: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "school"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_17',
+        areaId: 'math',
+        topic: 'Gasto hormiga',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_17",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 17: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "games"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_18',
+        areaId: 'math',
+        topic: 'Ahorro meta',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_18",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 18: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "life"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_19',
+        areaId: 'math',
+        topic: 'Pago grupal',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_19",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 19: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "coding"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
+    },
+    {
+        id: 'math_t1_20',
+        areaId: 'math',
+        topic: 'Comida rápida',
+        difficulty: 1,
+        text: "Situación real: Tienes que tomar una decisión basada en los números reales de esta situación.",
+        questions: [
+            {
+                id: "mq_t1_20",
+                type: "math_steps",
+                prompt_en: "Calculate the value",
+                prompt_es: "Calcula el resultado",
+                problem: "Problema de demostración 20: calcular la proporción o el costo total en base a 5 unidades a $12 cada una.",
+                expectedAnswer: "60",
+                stepHints_es: ["Multiplica las unidades por el costo"],
+                tags: ["arithmetic", "word_problem"],
+                why_it_matters_es: "Comprender gastos te da control de tu dinero.",
+                real_world_application_es: "Decidir si te alcanza para pagar estas unidades hoy.",
+                future_value_es: "Fundamental para la administración financiera adulta.",
+                mental_skill_built_es: "Precisión aritmética.",
+                tier: 1,
+                domain: "money"
+            }
+        ],
+        vocabLearned: [],
+        coachTip: "Asegúrate de alinear las unidades al multiplicar."
     }
 ];

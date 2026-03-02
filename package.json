@@ -5,13 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "check:codefences": "node scripts/check_no_codefences.cjs",
+    "build": "npm run check:codefences && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^12.34.3",
     "lucide-react": "^0.344.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.13.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
